@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/* ======== header ======== */
+header {
+    position: relative;
+    width: 100%;
+}
+
+.title-logo {
+    float: left; /* float:left; 에 width 값주면 크로스 브라우징됨 */
+    width: 200px; height: 100px;
+    line-height: 100px;
+    /* background-color: aquamarine; */
+}
+
+.mainmenu {
+    float: right;
+}
+
+.gnb {
+    position: relative;
+    display: flex;
+}
+
+.gnb > li > a {
+    width: 150px; height: 100px;
+    line-height: 100px; /* 텍스트, 이미지엔 안먹음 */
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+.gnb > li > a:hover {
+    font-weight: bold;
+    color: #fff;
+    background-color: #123456;
+}
+
+.gnb .submenu {
+    display: none;
+    position: absolute; /*메뉴 올림 */
+    top: 100px;
+    z-index: 1;
+    /* background-color: bisque; */
+}
+
+.gnb .submenu > li > a {
+    width: 150px; height: 40px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #123456;
+}
+
+.gnb .submenu > li > a:hover {
+    color: black;
+    text-decoration: underline;
+    background-color: lightblue;
+}
+
+/* ======== main ======== */
+/* slide */
+.slide {
+    clear: both; /* logo와 mainmenu의 float 해제 */
+    position: relative;
+    width: 1024px; /* important!_소스적으로 표기해야하는부분 */
+    overflow: hidden; /* important! */
+}
+
+.slide ul {
+    position: relative; /* important!, 슬라이드 움직임의 기준 */
+    display: flex;
+    width: 3072px; /* important! 가로로 나열된 3개 이미지의 가로 너비의 합 (1024*3) */
+}
+
+.slide li {
+    width: 1024px;
+}
+
+.slide img {
+    width: 100%;
+}
+
+/* contents */
+.contents {
+    display: flex;
+    justify-content: space-between; /* 박스를 양끝에 붙이고 나머지 공간을 사이사이에 배분 */
+}
+
+.contents > section {
+    width: 32%;
+    /* background-color: aqua; */
+}
+
+.contents h3 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* notice */
+.notice > .notice-list a {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.notice > .notice-list a:hover {
+    text-decoration: underline;
+}
+
+/* shortcut */
+.shortcut > .shortcut-list a {
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 5px;
+    padding-left: 70px;
+    background-repeat: no-repeat;
+    /* background-color: bisque; */
+}
+
+.shortcut > .shortcut-list > li:first-child a {
+    background-image: url(../images/ico1.jpg);
+}
+
+.shortcut > .shortcut-list > li:nth-child(2) a {
+    background-image: url(../images/ico2.jpg);
+}
+
+.shortcut > .shortcut-list > li:nth-child(3) a {
+    background-image: url(../images/ico3.jpg);
+}
+
+.shortcut > .shortcut-list > li:nth-child(4) a {
+    background-image: url(../images/ico4.jpg);
+}
+
+.shortcut > .shortcut-list > li:last-child a {
+    background-image: url(../images/ico5.jpg);
+}
+
+/* banner */
+.banner img {
+    width: 100%;
+}
+
+/* footer */
+footer {
+    display: flex;
+    align-items: center; /* 수직 가운데 배치 */
+    padding: 20px;
+    background-color: #ccc;
+}
+
+footer h2 {
+    position: static; /* 초기화 소스에 absolute 줬어서 해제 하려고 기본값줌 */
+    width: 20%;
+    /* background-color: antiquewhite; */
+}
+
+.info-menu ul {
+    display: flex;
+    margin: 10px 0;
+}

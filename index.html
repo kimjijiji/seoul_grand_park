@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="서울대공원 쌤이랑 같이하는 예제">
+    <meta name="author" content="김지민">
+    <link rel="stylesheet" href="./css/reset2.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>서울대공원</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 class="title-logo">
+                <a href="./index.html"><img src="./images/logo.png" alt="logo"></a> <!-- 로고 눌렀을때 메인페이지 = 자기자신 -->
+            </h1>
+            <nav class="mainmenu">
+                <ul class="gnb">
+                    <li>
+                        <a href="#">대공원 소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">서울대공원 소개</a></li>
+                            <li><a href="#">규모 및 현황</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">대공원 즐기기</a>
+                        <ul class="submenu">
+                            <li><a href="#">축제 및 행사</a></li>
+                            <li><a href="#">교육 프로그램</a></li>
+                            <li><a href="#">연간 교육일정</a></li>
+                            <li><a href="#">이벤트 신청</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">서울동물원</a>
+                        <ul class="submenu">
+                            <li><a href="#">동물이야기</a></li>
+                            <li><a href="#">동물원 즐기기</a></li>
+                            <li><a href="#">동물원 속 산림욕장</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- gnb end -->
+            </nav> <!-- mainmenu end -->
+        </header>
+
+        <main>
+            <article class="slide">
+                <h2>imge slide</h2>
+                <ul>
+                    <li>
+                        <a href="#"><img src="./images/mainslide1_thumb.jpg" alt="slide1"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/mainslide2_thumb.jpg" alt="slide2"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/mainslide3_thumb.jpg" alt="slide3"></a>
+                    </li>
+                </ul>
+            </article>
+
+            <section class="contents"> <!-- 섹션의 이중구조, 섹션은 제목요소 필수 -->
+                <h2>contents area</h2>
+                <section class="notice">
+                    <h3>공지사항</h3>
+                    <ul class="notice-list">
+                        <li><a href="#">[서울동물원] 12월의 동물 '그물무늬왕뱀'을 만나보...</a></li>
+                        <li><a href="#">[공지] 공원 및 동물원 내 공사 안내</a></li>
+                        <li><a href="#">[서울대공원] 2020년 서울대공원 자원봉사자 최종합</a></li>
+                        <li><a href="#">[공지] 서울대공원 야구장 12월~1월분 예약 안내</a></li>
+                        <li><a href="#">[서울대공원] [당선작 및 입상작 공고] 서울대공원</a></li>
+                        <li><a href="#">[치유숲] 치유의숲 동절기 휴장안내</a></li>
+                        <li><a href="#">서울동물원 및 테마가든 반입금지물품 안내! 꼭 지켜주세요~!</a></li>
+                        <li><a href="#">제로페이 이용하면 서울대공원 입장료 30% 할인!</a></li>
+                    </ul>
+                </section> <!-- notice end -->
+                <section class="shortcut">
+                    <h3>바로가기</h3>
+                    <ul class="shortcut-list"> <!-- 이미지 alt에 교육프로그램등 li의 이름을 썼다면 괜찮지만 이미지를 보고 온라인티켓예매인것을 알수가 없기때문에 데코로 백그라운드로 적용함 -->
+                        <li><a href="#">교육프로그램</a></li>
+                        <li><a href="#">야구장예약</a></li>
+                        <li><a href="#">광장예약</a></li>
+                        <li><a href="#">온라인티켓예매</a></li>
+                        <li><a href="#">전동카트투어</a></li>
+                    </ul>
+                </section> <!-- shortcut end -->
+                <section class="banner">
+                    <h3>홍보배너</h3>
+                    <img src="./images/banner1.jpg" alt="남북정상회담 성공기원 동물교류 사진전">
+                </section> <!-- banner end -->
+            </section> <!-- contents end -->
+        </main>
+
+        <footer>
+            <h2><img src="./images/logo.png" alt="second logo"></h2>
+            <div class="info">
+                <nav class="info-menu">
+                    <ul>
+                        <li><a href="#">이용약관개인정보│</a></li> <!-- ㅂ 한자키 -->
+                        <li><a href="#">처리방침개인정보│</a></li>
+                        <li><a href="#">이용내역미환급금</a></li>
+                    </ul>
+                </nav>
+                <address>서울특별시 중구 을지로 65 대표이사/사장 : 박정호</address>
+                <p>사업자등록번호 : 104-81-37225 판매허가번호 : 중구 02923호</p>
+                <p class="copyright">COPYRIGHT © SK TELECOM CO., LTD. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+    </div> <!-- wrapper end -->
+</body>
+</html>

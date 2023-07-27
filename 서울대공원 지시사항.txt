@@ -1,0 +1,17 @@
+- 메뉴
+=> header, footer : nav 태그 안에서 표현하기
+=> 메뉴 diplay:flex; 로 가로 표현하기
+
+로고는 
+
+- header 아래 큰 이미지 <article> 요소 안에 표현
+
+<main>
+	<article></article>
+	<div class="container"> => display: flex;
+		<section></section>
+		<section></section>
+		<section></section>
+	<div>
+</main>
+-> container 박스에 display:flex로 가로 표현하기
